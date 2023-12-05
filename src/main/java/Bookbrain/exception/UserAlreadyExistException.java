@@ -1,6 +1,7 @@
 package Bookbrain.exception;
 
-public class UserAlreadyExistException extends Throwable {
-    public UserAlreadyExistException(String userAlreadyExist) {
+public class UserAlreadyExistException extends RuntimeException {
+    public UserAlreadyExistException(String message) {
+        super(message);
     }
 }

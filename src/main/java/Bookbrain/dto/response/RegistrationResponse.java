@@ -1,4 +1,4 @@
-package bookinventory.dto.response;
+package Bookbrain.dto.response;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -6,5 +6,7 @@ import lombok.Setter;
 @Setter
 @Getter
 public class RegistrationResponse {
+
+    private Long id;
     private String message;
 }
