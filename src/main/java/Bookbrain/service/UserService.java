@@ -1,13 +1,18 @@
 package Bookbrain.service;
 
-import bookinventory.dto.request.LoginRequest;
-import bookinventory.dto.request.RegistrationRequest;
-import bookinventory.dto.response.LoginResponse;
-import bookinventory.dto.response.RegistrationResponse;
+
+import Bookbrain.dto.request.LoginRequest;
+import Bookbrain.dto.request.RegistrationRequest;
+import Bookbrain.dto.response.LoginResponse;
+import Bookbrain.dto.response.RegistrationResponse;
+import Bookbrain.model.Book;
+
+import java.util.List;
 
 public interface UserService {
 
     RegistrationResponse register(RegistrationRequest request);
 
     LoginResponse login(LoginRequest loginRequest);
+    List<Book> search(String books);
 }
